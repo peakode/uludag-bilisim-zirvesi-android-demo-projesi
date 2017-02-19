@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oyun_ekrani"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.murat.demoproje.OyunEkraniActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#617D8A"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Oyun Ekrani"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Slider üzerinde bir nokta seç ve bu sayıyı tahmin etmeye çalış :)"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             >
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/OyunEkrani_Slide"
+
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Tahmini buraya yaz"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/OyunEkrani_Tahmin" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#CDDA49"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Karşılaştır"
+            android:id="@+id/OyunEkrani_Buton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.9"
+        ></LinearLayout>
+</LinearLayout>
